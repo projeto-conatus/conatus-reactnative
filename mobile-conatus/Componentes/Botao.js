@@ -6,7 +6,7 @@ const Botao = ({text}) => {
     return (
         <View>
             <TouchableOpacity style={styles.button} >
-                <Text>{text}</Text>
+                <Text style={{color: "#fff"}}>{text}</Text>
             </TouchableOpacity>
          </View>
     )
