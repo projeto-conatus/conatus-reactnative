@@ -4,7 +4,7 @@ import  {useState} from 'react';
 import { StyleSheet, Text, View,Image, TextInput, Alert, Button, TouchableOpacity } from 'react-native';
 import {LinearGradient} from 'expo-linear-gradient'
 
-export default function App() {
+export default function Cadastrar() {
 
 
 
@@ -14,8 +14,8 @@ export default function App() {
   const [tipoEscola, setTipoEscola] =useState('');
   const [sobrenome, setSobrenome] =useState('');
   const [escolaridade, setEscolaridade] =useState('');
-  const [cpf, setCpf] =useState('');
-  const [dataNascimento, setDataNascimento] =useState('');
+  const [cpf, setCPF] =useState('');
+  const [dataNascimento, setNascimento] =useState('');
 
   const cadastro =()=>{
     Alert(nome);

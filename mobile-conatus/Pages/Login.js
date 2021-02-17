@@ -1,7 +1,7 @@
 import React from 'react';
 import {KeyboardAvoidingView, Image, View, TextInput, Text, TouchableOpacity, StyleSheet } from 'react-native';
 
-import Logo from '../assets/images/arte_login.svg'
+
 
 export default function Login() {
   return (
@@ -43,7 +43,6 @@ export default function Login() {
         {/* NAO FUNCIONA */}
 
         <View style={styles.containerLogo}>
-        <Image style={styles.Image} source={Logo} />
 
         </View>
 
