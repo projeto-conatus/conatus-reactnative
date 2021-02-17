@@ -2,9 +2,10 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { View } from 'react-native';
 
-import Cadastrar from './Pages/Cadastrar'
+import Cadastrar from './Pages/Cadastrar';
 import Login from './Pages/Login';
-import Home from './Pages/Home'
+import Home from './Pages/Home';
+import Trilha from './Pages/Cursos';
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <Login />
       <Cadastrar />
       <Home />
+      <Trilha />
       <StatusBar style="auto" />  
     </View>
       
