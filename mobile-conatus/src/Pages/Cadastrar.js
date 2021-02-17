@@ -1,8 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import  {useState} from 'react';
-import { StyleSheet, Text, View,Image, TextInput, Alert, Button, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Alert, TouchableOpacity, ScrollView} from 'react-native';
 import {LinearGradient} from 'expo-linear-gradient'
+
+import Login from './Login'
 
 export default function Cadastrar() {
 
@@ -29,8 +31,8 @@ export default function Cadastrar() {
   }
 
   return (
-
-  <LinearGradient start={{x: 0.0, y: 1.0}} end={{x: 1.0, y: 1.0}} colors={['#4d55c8','#3bbeef']}>
+    
+    <LinearGradient  start={{x: 0.0, y: 1.0}} end={{x: 1.0, y: 1.0}} colors={['#4d55c8','#3bbeef']}>
             <View style={styles.container}>
               <StatusBar hidden/>
 
@@ -76,7 +78,7 @@ export default function Cadastrar() {
               secureTextEntry={true}
               />
 
-              <TouchableOpacity style ={styles.btncadastro} onPress={()=>cadastro()}>
+              <TouchableOpacity style ={styles.btncadastro} onPress={(Login)}>
                 <Text>CADASTRAR</Text></TouchableOpacity>
 
 
@@ -102,13 +104,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   
-  logo:{
-    width:60,
-    height:60,
-    borderRadius:20,
-    Align:'left'
-
-  },
   button:{
    
     marginTop:1,
@@ -122,12 +117,14 @@ const styles = StyleSheet.create({
     padding:100,
     width:1274,
     textAlign:'center',
-    fontSize: 19
+    fontSize: 19,
+    color: '#e5e5e5'
   
 
   },
   input:{
     marginTop:10,
+    marginBottom: 10,
     padding:10,
     width:350,
     backgroundColor:'#fff',
@@ -146,9 +143,21 @@ const styles = StyleSheet.create({
   
     height:40
 
+  },
+
+  h1:{
+    textAlign:'center',
+    fontSize: 19,
+    color: '#e5e5e5',
+    marginBottom: 10,
+  },
+
+  h2: {
+    marginTop: 10,
+    marginBottom: 5,
+    textAlign:'center',
+    fontSize: 19,
+    color: '#e5e5e5'
   }
-
-
-  
 
 });

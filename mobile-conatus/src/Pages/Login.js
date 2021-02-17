@@ -3,7 +3,9 @@ import {KeyboardAvoidingView, View, TextInput, Text, TouchableOpacity, StyleShee
 
 
 
-export default function Login() {
+export default function Login(props) {
+  const { navigation } = props;
+
   return (
       <KeyboardAvoidingView style={styles.background}>
 
@@ -25,15 +27,15 @@ export default function Login() {
           onChange={()=>{}}
           />
 
-          <TouchableOpacity style={styles.btnSubmit}>
+          <TouchableOpacity style={styles.btnSubmit} onPress={() => navigation.navigate("Home")}>
             <Text style={styles.btnText}> Acessar </Text>
           </TouchableOpacity>
 
-           <TouchableOpacity style={styles.btnResgister}>
+           <TouchableOpacity style={styles.btnResgister} onPress={() => navigation.navigate("Cadastrar")}>
             <Text style={styles.btnResgisterText}>Cadastrar</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.btnResgister}>
+          <TouchableOpacity style={styles.btnResgister} >
             <Text style={styles.btnRecuperaText}>Esqueceu sua senha?</Text>
           </TouchableOpacity>
 
