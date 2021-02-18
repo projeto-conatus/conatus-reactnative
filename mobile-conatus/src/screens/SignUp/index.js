@@ -15,7 +15,7 @@ export default () => {
     const [passwordField, setPasswordField] = useState('')
 
     const HandleSignClick = () => {
-
+        alert("Cadastrado com sucesso")
     }
 
     const HandleMessageButtonClick = () => {
@@ -31,6 +31,38 @@ export default () => {
                  <InputArea>
 
                     <Text>* Imagem da logo do Conatus * </Text>
+
+                    <Text> CADASTRE -SE </Text>
+
+                    <Text> Nome </Text>
+                    <SignButtom 
+                    placeholder='Digite seu Nome'
+                    />
+
+                    <Text> Sobrenome </Text>
+                    <SignButtom 
+                    placeholder='Digite seu Sobrenome'
+                    />
+
+                    <Text> CPF </Text>
+                    <SignButtom 
+                    placeholder='Digite seu CPF'
+                    />
+
+                    <Text> Data de Nasc. </Text>
+                    <SignButtom 
+                    placeholder='dd/mm/aaaa'
+                    />
+
+                    <Text> Escolaridade </Text>
+                    <SignButtom 
+                    placeholder='Digite seu grau de escolaridade'
+                    />
+
+                    <Text> Tipo de Escola </Text>
+                    <SignButtom 
+                    placeholder='Pública ou privada'
+                    />
 
                     <Text> E-mail </Text>
                     <SignButtom 
@@ -54,7 +86,7 @@ export default () => {
 
                  </InputArea>
 
-                    <SignMessageButton onPress={HandleMessageButtonClick}>
+                    <SignMessageButton onPress={HandleMessageButtonClick} >
                     <SignMessageButtonText>Já possui uma conta? </SignMessageButtonText>
                     <SignMessageButtonTextBold>Faça Login</SignMessageButtonTextBold>
                     </SignMessageButton>    

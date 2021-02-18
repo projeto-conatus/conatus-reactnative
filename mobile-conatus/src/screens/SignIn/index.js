@@ -50,6 +50,7 @@ export default () => {
     
     return (
         <Container>
+            <Text> * Imagem logo Conatus *</Text>
              <Area>
                  <InputArea>
 
