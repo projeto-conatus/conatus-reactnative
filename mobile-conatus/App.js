@@ -1,11 +1,15 @@
 import React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
 
-import Routes from './src/routes/index'
-import {View} from 'react-native'
+import UserContexterProvider from './src/contexts/userContexts';
+import MainStack from './stacks/MainStack';
 
-
-export default function App() {
+export default () => {
   return (
-    <Routes />
+    <UserContexterProvider>
+      <NavigationContainer>
+        <MainStack />
+      </NavigationContainer>
+    </UserContexterProvider>
   );
 }
