@@ -11,7 +11,7 @@ export default () => {
 
     const navigation = useNavigation();
 
-    const [emailField, setEmailField] = useState('Projeto.conatus@gmail.com')
+    const [emailField, setEmailField] = useState('Conatus@org.com')
     const [passwordField, setPasswordField] = useState('')
 
     // ACESSANDO O BANCO
