@@ -1,5 +1,5 @@
 import React, { useState }from 'react';
-import {Text, View} from 'react-native';
+import {Text, View, Image} from 'react-native';
 import { useNavigation} from '@react-navigation/native'
 import { Area, Container, InputArea, CustomButton, CustomButtonText, SignMessageButton ,SignMessageButtonText, SignMessageButtonTextBold} from './styles';
 
@@ -50,11 +50,9 @@ export default () => {
     
     return (
         <Container>
-            <Text> * Imagem logo Conatus *</Text>
+            <Image source={require("../../assets/logo.svg")} style={{ width: 100, height: 100, marginBottom: 20 }} />
              <Area>
                  <InputArea>
-
-                    <Text> *Imagem de login *</Text>
 
                     <Text> E-mail </Text>
                     <SignButtom 

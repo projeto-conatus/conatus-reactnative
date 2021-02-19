@@ -9,13 +9,13 @@ export const Container = styled.SafeAreaView`
 `;
 
 export const Area = styled.View`
-    background-color: #e5e5e5;
-    padding-top: 100px; 
-    padding-buttom: 150px;
-    width: 80%;
+    background-color: #e5e5e5; 
+    width: 90%;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
+    margin: 10px;
+    padding: 10px 0px;
 `;
 
    
@@ -26,7 +26,7 @@ export const InputArea = styled.View`
 
 
 export const CustomButton = styled.TouchableOpacity`
-    height: 50px;
+    height: 40px;
     margin: 30px;
     padding-left: 50px;
     padding-right: 50px;

@@ -1,5 +1,5 @@
 import React, { useState }from 'react';
-import {Text, View} from 'react-native';
+import {Text, View, Image} from 'react-native';
 import { useNavigation} from '@react-navigation/native'
 import {LinearGradient} from 'expo-linear-gradient'
 import { Area, Container, InputArea, CustomButton, CustomButtonText, SignMessageButton ,SignMessageButtonText, SignMessageButtonTextBold} from './styles';
@@ -30,9 +30,10 @@ export default () => {
             <Container>
                  <InputArea>
 
-                    <Text>* Imagem da logo do Conatus * </Text>
+                    <Image source={require("../../assets/logo.svg")} style={{ width: 100, height: 100, marginBottom: 20 }} />
+                    
 
-                    <Text> CADASTRE -SE </Text>
+                    <Text style = {{fontSize: 15, fontWeight: "bold", margin: 20}}> CADASTRE -SE </Text>
 
                     <Text> Nome </Text>
                     <SignButtom 
